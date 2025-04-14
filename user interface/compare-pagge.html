@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">   <!-- برجاء تغير بين الديركشن عشان يتم تغير اللغة   dir="ltr" >>>>>> الانجليزي     dir="rtl" >>>>>>  العربي -->
+<head>
+<meta charset="utf-8">
+<meta name="description" content="barie real estate company"><!-- هنا يتم وضع وصف للموقع لتحسين ترتيب رانك البحث داخل محركات البحث -->
+<meta name="keywords" content="HTML, CSS, JavaScript"><!-- هنا يتم وضع كلمات مفتاحية للموقع لتحسين ترتيب رانك البحث داخل محركات البحث -->
+<meta name="author" content="barie real estate company">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>شركة بريع العقارية</title>
+<link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+<link rel="stylesheet" href="../assets/css/bootstrap.rtl.min.css"><!-- برجاء تغير بين الديركشن عشان يتم تغير اللغة   href="../assets/css/bootstrap.min.css" >>>>>> الانجليزي     href="../assets/css/bootstrap.rtl.min.css" >>>>>>  العربي -->
+<link rel="stylesheet" href="../assets/css/animate.css">
+<link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="../assets/css/css/styles.min.css">
+</head>
+<body>
+<!-- login POPUP -->
+<div class="modal fade login_popup" data-bs-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../assets/images/icons/close.svg" alt="icon">
+        </button>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">تسجيل الدخول</h1>
+      </div><!-- END C/ modal-header -->
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label  class="form-label">اسم المستخدم</label>
+            <input type="text" class="form-control" >
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">الرقم السري</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" >
+              <span class="input-group-text" id="basic-addon1">
+                <img src="../assets/images/icons/eye2.svg" alt="icon">
+              </span>
+            </div>
+          </div>
+          <div class="mb-3 flx_bx flx_btwen">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalTwo">نسيت كلمة المرور!</a>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                تذكرني
+              </label>
+            </div>
+          </div>
+          </form>
+      </div><!-- END C/ modal-body -->
+      <div class="modal-footer flx_bx">
+        <button type="button" class="btn btn_st"><img src="../assets/images/icons/icon10.svg" alt="image">دخول</button>
+        <p class="orText">أو يمكنك الانضمام الينا بالضغط علي الزر بالاسفل</p>
+        <a href="تسجيل-جديد.html" class="btn btn_sc"><img src="../assets/images/icons/icon11.svg" alt="image">انضم الينا</a>
+      </div><!-- END C/ modal-footer -->
+    </div><!-- END C/ modal-content -->
+  </div><!-- END C/ modal-dialog -->
+</div><!-- END C/ login_popup -->
+
+<!-- forget POPUP -->
+<div class="modal fade forget_popup" data-bs-backdrop="static" id="exampleModalTwo" tabindex="-1" aria-labelledby="exampleModalTwoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../assets/images/icons/close.svg" alt="icon">
+        </button>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">نسيت كلمة المرور</h1>
+      </div><!-- END C/ modal-header -->
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label  class="form-label">البريد الالكتروني</label>
+            <input type="email" class="form-control" >
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">الرقم السري القديم</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" >
+              <span class="input-group-text" id="basic-addon1">
+                <img src="../assets/images/icons/eye2.svg" alt="icon">
+              </span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">الرقم السري الجديد</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" >
+              <span class="input-group-text" id="basic-addon1">
+                <img src="../assets/images/icons/eye2.svg" alt="icon">
+              </span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">تأكيد الرقم السري الجديد</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" >
+              <span class="input-group-text" id="basic-addon1">
+                <img src="../assets/images/icons/eye2.svg" alt="icon">
+              </span>
+            </div>
+          </div>
+          </form>
+      </div><!-- END C/ modal-body -->
+      <div class="modal-footer flx_bx">
+        <button type="button" class="btn btn_st">حفظ</button>
+        <button type="button" class="btn btn_sc" data-bs-toggle="modal" data-bs-target="#exampleModal">عودة</button>
+      </div><!-- END C/ modal-footer -->
+    </div><!-- END C/ modal-content -->
+  </div><!-- END C/ modal-dialog -->
+</div><!-- END C/ login_popup -->
+
+<div class="fixedCompareLink">  <!-- تظهر فقط مع اضافة للمقارنة علي الوحدات او المطوريين -->
+  <a href="compare-pagge.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="auto" title="شاهد المقارنة">
+    <img src="../assets/images/icons/compare.svg" alt="icon">
+  </a>
+</div><!-- END C/ fixedCompareLink -->
+
+<header class="sticy_top">
+  <div class="header_bx">
+    <div class="top_header">
+      <div class="container">
+        <div class="flx_bx flx_btwen">
+          <div class="start_bx">
+            <nav>
+              <ul class="flx_bx">
+                <li>
+                  <a href="من-نحن.html">عن بريع</a>
+                </li>
+                <li>
+                  <a href="سياسة-الاستخدام.html" >سياسة الاستخدام والخصوصية</a>
+                </li>
+                <li>
+                  <a href="تواصل-معنا.html" >تواصل معنا</a>
+                </li>
+                <li>
+                  <a href="الاسئلة-الشائعة.html" >الاسئلة الشائعة</a>
+                </li>
+                <li>
+                  <a href="المدونة.html" >المدونة</a>
+                </li>
+              </ul>
+            </nav>
+        </div><!-- END C/ start_bx -->
+        <div class="end_bx">
+          <div class="btn_bx">
+            <ul class="flx_bx">     
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <a  class="btn btn_icn" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="تسجيل الدخول / انضم إلينا">
+                  <img src="../assets/images/icons/icon1svg.svg" alt="icon">
+                </a>
+              </li>         
+              <li>
+                <a href="#" class="btn btn_st">
+                  <img src="../assets/images/icons/icon2.svg" alt="icon">
+                  <span>أضف مشروعك</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="lang_lnk">EN</a>
+              </li>
+              <li>
+                <a href="" class="lang_lnk active">AR</a>
+              </li>
+            </ul>
+          </div><!-- END C/ btn_bx -->
+        </div><!-- END C/ end_bx -->
+        </div><!-- END C/ flx_bx flx_btwen -->
+      </div><!-- END C/ container -->
+    </div><!-- END C/ top_header -->
+    <div class="bottom_header">
+      <div class="container">
+      <div class="flx_bx flx_btwen">
+        <div class="start_bx">
+          <a href="index.html">
+            <img src="../assets/images/logo.svg" alt="logo image">
+          </a>
+        </div><!-- END C/ start_bx -->
+        <div class="end_bx">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img src="../assets/images/icons/icon30.svg" alt="icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse_header flx_bx flx_btwen">
+                  <h1>القائمة الرئيسية</h1>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="../assets/images/icons/icon31.svg" alt="icon"></span>
+                  </button>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                      <span>الرئيسية</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="مشاريع-المطوريين.html"> 
+                      <span>مشاريع المطوريين</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="وحدات-المشاريع.html">
+                      <span>مشاريع مميزة</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> 
+                      <span>العروض العقارية</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> 
+                      <span>عروض مميزة</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> 
+                      <span>الطلبات<i class="fas fa-chevron-down"></i></span>
+                    </a>
+                    <ul class="animated flipInX">
+                      <li>
+                        <a href="تسجيل-جديد.html">  
+                          <span>طلب انضمام مطور</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="تسجيل-جديد.html"> 
+                          <span>طلب شراكة الوسطاء العقاريين</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="تسجيل-جديد.html"> 
+                          <span>طلب خدمات تسويقية خاصة</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="تسجيل-جديد.html"> 
+                        <span>طلب عرض عقار لدى بريع (تتطلب عضوية فردية)</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="تسجيل-جديد.html"> 
+                        <span>طلب عقار مخصص (تتطلب عضوية فردية)</span>
+                    </a>
+                  </li>
+                    </ul>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="من-نحن.html" class="nav-link collapseHideLink">
+                      <span>عن بريع</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="تواصل-معنا.html" class="nav-link collapseHideLink" >
+                      <span>تواصل معنا</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="المدونة.html" class="nav-link collapseHideLink" >
+                      <span>المدونة</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="الاسئلة-الشائعة.html" class="nav-link collapseHideLink" >
+                      <span>الاسئلة الشائعة</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="سياسة-الاستخدام.html"  class="nav-link collapseHideLink">
+                      <span>سياسة الاستخدام والخصوصية</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div><!-- END C/ end_bx -->
+      </div><!-- END C/ flx_bx flx_btwen -->
+    </div><!-- END C/ container -->
+    </div><!-- END C/ bottom_header -->
+  </div><!-- END C/ header_bx -->
+</header><!-- END C/ sticy_top -->
+
+<section class="breadcrumb_bx">
+  <div class="container">
+  <h1>المقارنة</h1>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+      <li class="breadcrumb-item active" aria-current="page">المقارنة</li>
+    </ol>
+  </nav><!-- END C/ breadcrumb -->
+</div><!-- END C/ container -->
+</section><!-- END C/ breadcrumb_bx -->
+
+<section class="inner_pg compare_pg">
+  <div class="container">
+        <article>
+            <div class="table-responsive">
+              <table class="table">
+                  <tr>
+                    <th>
+                      <div>
+                          اسم المشروع
+                      </div>
+                    </th>
+                    <td>
+                      <div>
+                          مشروع 1
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        مشروع 2
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div>
+                          اسم المطور
+                      </div>
+                    </th>
+                    <td>
+                      <div>
+                          مشروع 1
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        مشروع 2
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div>
+                           الحالة
+                      </div>
+                    </th>
+                    <td>
+                      <div>
+                          مشروع 1
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        مشروع 2
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div>
+                          السعر
+                      </div>
+                    </th>
+                    <td>
+                      <div>
+                          مشروع 1
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        مشروع 2
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div>
+                           المكان
+                      </div>
+                    </th>
+                    <td>
+                      <div>
+                          مشروع 1
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        مشروع 2
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div>
+                           المميزات
+                      </div>
+                    </th>
+                    <td>
+                      <div>
+                          مشروع 1
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        مشروع 2
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div>
+                           الضمانات
+                      </div>
+                    </th>
+                    <td>
+                      <div>
+                          مشروع 1
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        مشروع 2
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div>
+                           
+                      </div>
+                    </th>
+                    <td>
+                      <div>
+                        <a href="#" class="moreLink btn btn_st">
+                          <img src="../assets/images/icons/eye.svg" alt="icon">
+                          المزيد
+                         </a>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <a href="#" class="moreLink btn btn_st">
+                          <img src="../assets/images/icons/eye.svg" alt="icon">
+                          المزيد
+                         </a>
+                      </div>
+                    </td>
+                  </tr>
+              </table>
+            </div>
+        </article>
+  </div><!-- END C/ container -->
+</section><!-- END C/ inner_pg -->
+
+<footer>
+  <div class="newsLetter_bx">
+      <div class="flx_bx flx_btwen">
+        <div class="start_bx flx_bx">
+          <img src="../assets/images/icons/open-email.svg" alt="icon">
+          <div class="txt_bx">
+            <h1>اشترك في نشرتنا البريدية</h1>
+            <p>يمكنك الان البقاء علي اطلاع بكل جديد العقارات</p>
+          </div><!-- END C/ txt_bx -->
+        </div><!-- END C/ start_bx -->
+        <div class="end_bx">
+          <form>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="اكتب بريدك الالكتروني هنا" >
+              <span class="input-group-text">
+                <button type="button" class="btn btn_st">اشتراك</button>
+              </span>
+            </div><!-- END C/ input-group -->
+          </form>
+        </div><!-- END C/ end_bx -->
+      </div><!-- END C/ flx_bx -->
+  </div><!-- END C/ newsLetter_bx -->
+  <div class="top_footer">
+    <div class="container">
+      <div class="row">
+      <div class="col-12 col-md-5">
+          <img src="../assets/images/logo2.svg" alt="logo">
+          <p>
+            كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري 
+          </p>
+          <ul class="soc_list flx_bx flx_start">
+            <li>
+              <a href="#" target="_blank" class="twit_soc" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="inst_soc" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="youtube_soc" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="snap_soc" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="snapchat">
+                <i class="fab fa-snapchat-ghost"></i>
+              </a>
+            </li>
+          </ul>
+      </div><!-- END C/ col -->
+      <div class="col-12 col-md-7">
+          <ul class="footer_nav flx_bx">
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>الرئيسية</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>مشاريع المطوريين</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>مشاريع مميزة</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>العروض العقارية</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>عروض مميزة</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>الطلبات</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>عن بريع</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>سياسة الاستخدام والخصوصية</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>المدونة</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>الاسئلة الشائعة</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>تواصل معنا</span>
+              </a>
+            </li>
+          </ul>
+      </div><!-- END C/ col -->
+    </div><!-- END C/ row -->
+    </div><!-- END C/ container -->
+  </div><!-- END C/ top_footer -->
+  <div class="bottom_footer">
+    <div class="container">
+      <p>جميع الحقوق محفوظة لشركة بريع العقارية &copy; 2023</p>
+    </div><!-- END C/ container -->
+  </div><!-- END C/ bottom_footer -->
+</footer>
+
+<!-- *^* JS *^* --> 
+   <script src="../assets/js/bootstrap.bundle.min.js"></script>
+   <script src="../assets/js/popper.min.js"></script>
+   <script src="../assets/js/all.min.js"></script>
+   <script src="../assets/js/fontawesome.min.js"></script>
+   <script src="../assets/js/jquery-1.12.2.min.js"></script>
+   <script src="../assets/js/owl.carousel.min.js"></script>
+   <script src="../assets/js/mscript.js"></script>
+   <script src="../assets/js/waypoints.min.js"></script> 
+   <script src="../assets/js/animation.js"></script>
+</body>
+</html>

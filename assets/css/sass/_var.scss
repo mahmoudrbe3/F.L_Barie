@@ -1,0 +1,30 @@
+// variable
+$white-color: #fff;
+$prim-color: #178C8C;
+$sec-color: #006A6A;
+
+$thr-color: #58d1d1;
+
+$txt-color: #191C1A;
+$txt-color2: #6F7979;
+$shadow: 0 0 15px -9px #666;
+$trans: all 0.3s ease-in-out;
+
+// Extend
+%flx-bx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Transation */
+%transation{
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* GRADIANT */
+%gradiant-color{
+    background-color:#34656F;
+    background-image: linear-gradient(260deg, #34656F, #007033 80%);
+  }

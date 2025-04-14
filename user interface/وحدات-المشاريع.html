@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">   <!-- برجاء تغير بين الديركشن عشان يتم تغير اللغة   dir="ltr" >>>>>> الانجليزي     dir="rtl" >>>>>>  العربي -->
+<head>
+<meta charset="utf-8">
+<meta name="description" content="barie real estate company"><!-- هنا يتم وضع وصف للموقع لتحسين ترتيب رانك البحث داخل محركات البحث -->
+<meta name="keywords" content="HTML, CSS, JavaScript"><!-- هنا يتم وضع كلمات مفتاحية للموقع لتحسين ترتيب رانك البحث داخل محركات البحث -->
+<meta name="author" content="barie real estate company">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>شركة بريع العقارية</title>
+<link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+<link rel="stylesheet" href="../assets/css/bootstrap.rtl.min.css"><!-- برجاء تغير بين الديركشن عشان يتم تغير اللغة   href="../assets/css/bootstrap.min.css" >>>>>> الانجليزي     href="../assets/css/bootstrap.rtl.min.css" >>>>>>  العربي -->
+<link rel="stylesheet" href="../assets/css/animate.css">
+<link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="../assets/css/css/styles.min.css">
+</head>
+<body>
+<!-- login POPUP -->
+<div class="modal fade login_popup" data-bs-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../assets/images/icons/close.svg" alt="icon">
+        </button>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">تسجيل الدخول</h1>
+      </div><!-- END C/ modal-header -->
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label  class="form-label">اسم المستخدم</label>
+            <input type="text" class="form-control" >
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">الرقم السري</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" >
+              <span class="input-group-text" id="basic-addon1">
+                <img src="../assets/images/icons/eye2.svg" alt="icon">
+              </span>
+            </div>
+          </div>
+          <div class="mb-3 flx_bx flx_btwen">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalTwo">نسيت كلمة المرور!</a>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                تذكرني
+              </label>
+            </div>
+          </div>
+          </form>
+      </div><!-- END C/ modal-body -->
+      <div class="modal-footer flx_bx">
+        <button type="button" class="btn btn_st"><img src="../assets/images/icons/icon10.svg" alt="image">دخول</button>
+        <p class="orText">أو يمكنك الانضمام الينا بالضغط علي الزر بالاسفل</p>
+        <a href="تسجيل-جديد.html" class="btn btn_sc"><img src="../assets/images/icons/icon11.svg" alt="image">انضم الينا</a>
+      </div><!-- END C/ modal-footer -->
+    </div><!-- END C/ modal-content -->
+  </div><!-- END C/ modal-dialog -->
+</div><!-- END C/ login_popup -->
+
+<!-- forget POPUP -->
+<div class="modal fade forget_popup" data-bs-backdrop="static" id="exampleModalTwo" tabindex="-1" aria-labelledby="exampleModalTwoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../assets/images/icons/close.svg" alt="icon">
+        </button>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">نسيت كلمة المرور</h1>
+      </div><!-- END C/ modal-header -->
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label  class="form-label">البريد الالكتروني</label>
+            <input type="email" class="form-control" >
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">الرقم السري القديم</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" >
+              <span class="input-group-text" id="basic-addon1">
+                <img src="../assets/images/icons/eye2.svg" alt="icon">
+              </span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">الرقم السري الجديد</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" >
+              <span class="input-group-text" id="basic-addon1">
+                <img src="../assets/images/icons/eye2.svg" alt="icon">
+              </span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">تأكيد الرقم السري الجديد</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" >
+              <span class="input-group-text" id="basic-addon1">
+                <img src="../assets/images/icons/eye2.svg" alt="icon">
+              </span>
+            </div>
+          </div>
+          </form>
+      </div><!-- END C/ modal-body -->
+      <div class="modal-footer flx_bx">
+        <button type="button" class="btn btn_st">حفظ</button>
+        <button type="button" class="btn btn_sc" data-bs-toggle="modal" data-bs-target="#exampleModal">عودة</button>
+      </div><!-- END C/ modal-footer -->
+    </div><!-- END C/ modal-content -->
+  </div><!-- END C/ modal-dialog -->
+</div><!-- END C/ login_popup -->
+
+<div class="fixedCompareLink">  <!-- تظهر فقط مع اضافة للمقارنة علي الوحدات او المطوريين -->
+  <a href="compare-pagge.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="auto" title="شاهد المقارنة">
+    <img src="../assets/images/icons/compare.svg" alt="icon">
+  </a>
+</div><!-- END C/ fixedCompareLink -->
+
+<!-- video POPUP -->
+<div class="modal fade video_popup" data-bs-backdrop="static" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../assets/images/icons/close.svg" alt="icon">
+        </button>
+      </div><!-- END C/ modal-header -->
+      <div class="modal-body">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wNZAo7MNYFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div><!-- END C/ modal-body -->
+    </div><!-- END C/ modal-content -->
+  </div><!-- END C/ modal-dialog -->
+</div><!-- END C/ video_popup -->
+
+<!-- gallery POPUP -->
+<div class="modal fade gallery_popup" data-bs-backdrop="static" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../assets/images/icons/close.svg" alt="icon">
+        </button>
+      </div><!-- END C/ modal-header -->
+      <div class="modal-body">
+        <div class="owl-carousel owl-carouselThree owl-theme">
+          <div class="item">
+            <figure>
+              <img src="../assets/images/sliders/s1.jpg" alt="slideshow">
+            </figure>
+          </div><!-- END C/ item -->
+          <div class="item">
+            <figure>
+              <img src="../assets/images/sliders/s1.jpg" alt="slideshow">
+            </figure>
+          </div><!-- END C/ item -->
+          <div class="item">
+            <figure>
+              <img src="../assets/images/sliders/s1.jpg" alt="slideshow">
+            </figure>
+          </div><!-- END C/ item -->
+          <div class="item">
+            <figure>
+              <img src="../assets/images/sliders/s1.jpg" alt="slideshow">
+            </figure>
+          </div><!-- END C/ item -->
+          <div class="item">
+            <figure>
+              <img src="../assets/images/sliders/s1.jpg" alt="slideshow">
+            </figure>
+          </div><!-- END C/ item -->
+          <div class="item">
+            <figure>
+              <img src="../assets/images/sliders/s1.jpg" alt="slideshow">
+            </figure>
+          </div><!-- END C/ item -->
+          <div class="item">
+            <figure>
+              <img src="../assets/images/sliders/s1.jpg" alt="slideshow">
+            </figure>
+          </div><!-- END C/ item -->
+          </div><!-- END C/ owl-carousel -->
+      </div><!-- END C/ modal-body -->
+    </div><!-- END C/ modal-content -->
+  </div><!-- END C/ modal-dialog -->
+</div><!-- END C/ gallery_popup -->
+
+<!-- sendtoDevModal POPUP -->
+<div class="modal fade sendtoDev_popup" data-bs-backdrop="static" id="sendtoDevModal" tabindex="-1" aria-labelledby="sendtoDevModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../assets/images/icons/close.svg" alt="icon">
+        </button>
+        <h1 class="modal-title fs-5" id="sendtoDevModalLabel">سجل اهتمامك بالمطور</h1>
+        <p>يمكنك الان ان تكون علي اطلاع بجميع عروض هذا المطور</p>
+      </div><!-- END C/ modal-header -->
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label  class="form-label">اسم المستخدم</label>
+            <input type="text" class="form-control" >
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">البريد الالكتروني</label>
+            <input type="email" class="form-control" >
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">رقم الجوال</label>
+            <input type="tel" class="form-control" >
+          </div>
+          </form>
+      </div><!-- END C/ modal-body -->
+      <div class="modal-footer flx_bx">
+        <button type="button" class="btn btn_st"><img src="../assets/images/icons/icon10.svg" alt="image">ارسال</button>
+      </div><!-- END C/ modal-footer -->
+    </div><!-- END C/ modal-content -->
+  </div><!-- END C/ modal-dialog -->
+</div><!-- END C/ sendtoDev_popup -->
+
+<!-- mapModal POPUP -->
+<div class="modal fade mapModal_popup" data-bs-backdrop="static" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../assets/images/icons/close.svg" alt="icon">
+        </button>
+      </div><!-- END C/ modal-header -->
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14927084.708366672!2d36.073331871207586!3d24.020209036813068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2sSaudi+Arabia!5e0!3m2!1sen!2seg!4v1469278275804" allowfullscreen></iframe>
+      </div><!-- END C/ modal-body -->
+    </div><!-- END C/ modal-content -->
+  </div><!-- END C/ modal-dialog -->
+</div><!-- END C/ mapModal -->
+
+<!-- login POPUP -->
+<div class="modal fade login_popup" data-bs-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../assets/images/icons/close.svg" alt="icon">
+        </button>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">تسجيل الدخول</h1>
+      </div><!-- END C/ modal-header -->
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label  class="form-label">اسم المستخدم</label>
+            <input type="text" class="form-control" >
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">الرقم السري</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" >
+              <span class="input-group-text" id="basic-addon1">
+                <img src="../assets/images/icons/eye2.svg" alt="icon">
+              </span>
+            </div>
+          </div>
+          <div class="mb-3 flx_bx flx_btwen">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalTwo">نسيت كلمة المرور!</a>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                تذكرني
+              </label>
+            </div>
+          </div>
+          </form>
+      </div><!-- END C/ modal-body -->
+      <div class="modal-footer flx_bx">
+        <button type="button" class="btn btn_st"><img src="../assets/images/icons/icon10.svg" alt="image">دخول</button>
+        <p class="orText">أو يمكنك الانضمام الينا بالضغط علي الزر بالاسفل</p>
+        <a href="تسجيل-جديد.html" class="btn btn_sc"><img src="../assets/images/icons/icon11.svg" alt="image">انضم الينا</a>
+      </div><!-- END C/ modal-footer -->
+    </div><!-- END C/ modal-content -->
+  </div><!-- END C/ modal-dialog -->
+</div><!-- END C/ login_popup -->
+
+<!-- forget POPUP -->
+<div class="modal fade forget_popup" data-bs-backdrop="static" id="exampleModalTwo" tabindex="-1" aria-labelledby="exampleModalTwoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../assets/images/icons/close.svg" alt="icon">
+        </button>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">نسيت كلمة المرور</h1>
+      </div><!-- END C/ modal-header -->
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label  class="form-label">البريد الالكتروني</label>
+            <input type="email" class="form-control" >
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">الرقم السري القديم</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" >
+              <span class="input-group-text" id="basic-addon1">
+                <img src="../assets/images/icons/eye2.svg" alt="icon">
+              </span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">الرقم السري الجديد</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" >
+              <span class="input-group-text" id="basic-addon1">
+                <img src="../assets/images/icons/eye2.svg" alt="icon">
+              </span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">تأكيد الرقم السري الجديد</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" >
+              <span class="input-group-text" id="basic-addon1">
+                <img src="../assets/images/icons/eye2.svg" alt="icon">
+              </span>
+            </div>
+          </div>
+          </form>
+      </div><!-- END C/ modal-body -->
+      <div class="modal-footer flx_bx">
+        <button type="button" class="btn btn_st">حفظ</button>
+        <button type="button" class="btn btn_sc" data-bs-toggle="modal" data-bs-target="#exampleModal">عودة</button>
+      </div><!-- END C/ modal-footer -->
+    </div><!-- END C/ modal-content -->
+  </div><!-- END C/ modal-dialog -->
+</div><!-- END C/ login_popup -->
+
+<div class="fixedCompareLink">  <!-- تظهر فقط مع اضافة للمقارنة علي الوحدات او المطوريين -->
+  <a href="compare-pagge.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="auto" title="شاهد المقارنة">
+    <img src="../assets/images/icons/compare.svg" alt="icon">
+  </a>
+</div><!-- END C/ fixedCompareLink -->
+
+<header class="sticy_top">
+  <div class="header_bx">
+    <div class="top_header">
+      <div class="container">
+        <div class="flx_bx flx_btwen">
+          <div class="start_bx">
+            <nav>
+              <ul class="flx_bx">
+                <li>
+                  <a href="من-نحن.html">عن بريع</a>
+                </li>
+                <li>
+                  <a href="سياسة-الاستخدام.html" >سياسة الاستخدام والخصوصية</a>
+                </li>
+                <li>
+                  <a href="تواصل-معنا.html" >تواصل معنا</a>
+                </li>
+                <li>
+                  <a href="الاسئلة-الشائعة.html" >الاسئلة الشائعة</a>
+                </li>
+                <li>
+                  <a href="المدونة.html" >المدونة</a>
+                </li>
+              </ul>
+            </nav>
+        </div><!-- END C/ start_bx -->
+        <div class="end_bx">
+          <div class="btn_bx">
+            <ul class="flx_bx">     
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <a  class="btn btn_icn" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="تسجيل الدخول / انضم إلينا">
+                  <img src="../assets/images/icons/icon1svg.svg" alt="icon">
+                </a>
+              </li>         
+              <li>
+                <a href="#" class="btn btn_st">
+                  <img src="../assets/images/icons/icon2.svg" alt="icon">
+                  <span>أضف مشروعك</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="lang_lnk">EN</a>
+              </li>
+              <li>
+                <a href="" class="lang_lnk active">AR</a>
+              </li>
+            </ul>
+          </div><!-- END C/ btn_bx -->
+        </div><!-- END C/ end_bx -->
+        </div><!-- END C/ flx_bx flx_btwen -->
+      </div><!-- END C/ container -->
+    </div><!-- END C/ top_header -->
+    <div class="bottom_header">
+      <div class="container">
+      <div class="flx_bx flx_btwen">
+        <div class="start_bx">
+          <a href="index.html">
+            <img src="../assets/images/logo.svg" alt="logo image">
+          </a>
+        </div><!-- END C/ start_bx -->
+        <div class="end_bx">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img src="../assets/images/icons/icon30.svg" alt="icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse_header flx_bx flx_btwen">
+                  <h1>القائمة الرئيسية</h1>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="../assets/images/icons/icon31.svg" alt="icon"></span>
+                  </button>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                      <span>الرئيسية</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="مشاريع-المطوريين.html"> 
+                      <span>مشاريع المطوريين</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="وحدات-المشاريع.html">
+                      <span>مشاريع مميزة</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> 
+                      <span>العروض العقارية</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> 
+                      <span>عروض مميزة</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> 
+                      <span>الطلبات<i class="fas fa-chevron-down"></i></span>
+                    </a>
+                    <ul class="animated flipInX">
+                      <li>
+                        <a href="تسجيل-جديد.html">  
+                          <span>طلب انضمام مطور</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="تسجيل-جديد.html"> 
+                          <span>طلب شراكة الوسطاء العقاريين</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="تسجيل-جديد.html"> 
+                          <span>طلب خدمات تسويقية خاصة</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="تسجيل-جديد.html"> 
+                        <span>طلب عرض عقار لدى بريع (تتطلب عضوية فردية)</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="تسجيل-جديد.html"> 
+                        <span>طلب عقار مخصص (تتطلب عضوية فردية)</span>
+                    </a>
+                  </li>
+                    </ul>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="من-نحن.html" class="nav-link collapseHideLink">
+                      <span>عن بريع</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="تواصل-معنا.html" class="nav-link collapseHideLink" >
+                      <span>تواصل معنا</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="المدونة.html" class="nav-link collapseHideLink" >
+                      <span>المدونة</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="الاسئلة-الشائعة.html" class="nav-link collapseHideLink" >
+                      <span>الاسئلة الشائعة</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="سياسة-الاستخدام.html"  class="nav-link collapseHideLink">
+                      <span>سياسة الاستخدام والخصوصية</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div><!-- END C/ end_bx -->
+      </div><!-- END C/ flx_bx flx_btwen -->
+    </div><!-- END C/ container -->
+    </div><!-- END C/ bottom_header -->
+  </div><!-- END C/ header_bx -->
+</header><!-- END C/ sticy_top -->
+
+<section class="breadcrumb_bx">
+  <div class="container">
+  <h1>اسم المشروع</h1>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+      <li class="breadcrumb-item"><a href="#">مشاريع المطوريين</a></li>
+      <li class="breadcrumb-item active" aria-current="page">اسم المشروع</li>
+    </ol>
+  </nav><!-- END C/ breadcrumb -->
+</div><!-- END C/ container -->
+</section><!-- END C/ breadcrumb_bx -->
+
+<section class="projectHeader_bx">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 sart_bx">
+         <div class="desc_bx flx_bx flx_start">
+          <figure>
+            <figcaption>
+              <h1>مشروع مونتن فيو</h1>
+              <h2>تطوير معمار المرشدي</h2>
+              <p>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص.</p>
+              <ul class="moreFeat_bx flx_bx flx_start" >
+                <li>
+                    <img src="../assets/images/icons/icon6.svg" alt="icon">
+                    <span>السعودية - الرياض</span>
+                </li>
+                <li>
+                  <img src="../assets/images/icons/icon8.svg" alt="icon">
+                  <span>شقق</span>
+              </li>
+              <li>
+                <img src="../assets/images/icons/icon17.svg" alt="icon">
+                <span>جاهزة للتسليم</span>
+            </li>
+              </ul>
+            </figcaption>
+          </figure>
+         </div>
+      </div><!-- END C/ col -->
+      <div class="col-12 col-md-6 end_bx">
+        <div class="listofLinks_bx">
+          <ul class="flx_bx flx_end">
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#videoModal" class="btn btn_st">
+                <img src="../assets/images/icons/icon12.svg" alt="icon">
+                <span>فيديو تعريفي</span>
+              </a>
+            </li>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#galleryModal" class="btn btn_sc">
+                <img src="../assets/images/icons/icon13.svg" alt="icon">
+                <span>معرض الصور</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn btn_th">
+                <img src="../assets/images/icons/icon15.svg" alt="icon">
+                <span>رؤية بزاوية 360</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="btn btn_fr">
+                <img src="../assets/images/icons/icon16.svg" alt="icon">
+                <span>تحميل ملف المشرع</span>
+              </a>
+            </li>
+          </ul>
+        </div><!-- END C/ listofLinks_bx  -->
+        <div class="shareandMoreLinks_bx flx_bx flx_end">
+          <div class="sahare_bx">
+              <!-- Go to www.addthis.com/dashboard to customize your tools -->
+              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51e3bd3759786b65"></script>
+              <!-- Go to www.addthis.com/dashboard to customize your tools -->
+              <div class="addthis_inline_share_toolbox_4mt5"></div>
+          </div><!-- END C/ sahare_bx -->
+          <div class="moreLinks_bx">
+              <ul class="flx_bx flx_end">
+                <li>
+                  <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمفضلة" class="btn btn_icn">
+                    <img src="../assets/images/icons/fav2.svg" alt="icon">
+                  </a>
+                </li>
+                <li>
+                  <a data-bs-toggle="modal" data-bs-target="#sendtoDevModal" class="btn btn_st">
+                    <img src="../assets/images/icons/send.svg" alt="icon">
+                    <span>سجل اهتمامك بالمطور</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-bs-toggle="modal" data-bs-target="#mapModal" class="btn btn_sc">
+                    <img src="../assets/images/icons/icon13.svg" alt="icon">
+                    <span>عرض الخريطة</span>
+                  </a>
+                </li>
+              </ul>
+          </div><!-- END C/ moreLinks_bx -->
+        </div><!-- END C/ shareandMoreLinks_bx -->
+      </div><!-- END C/ col -->
+      <div class="col-12 grid_bx">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <th>
+                  <div>
+                    تفاصيل المشروع :
+                  </div>
+                </th>
+                <th>
+                  <div>
+                    مميزات المشروع :
+                  </div>
+                </th>
+                <th>
+                  <div>
+                    ضمانات المشروع :
+                  </div>
+                </th>
+              </thead>
+              <tbody>
+                <td>
+                  <div>
+                    <ul class="moreFeat_bx flx_bx flx_start" >
+                      <li>
+                          <img src="../assets/images/icons/icon9.svg" alt="icon">
+                          <span>مساحة المشروع 300 فدان</span>
+                      </li>
+                      <li>
+                        <img src="../assets/images/icons/icon8.svg" alt="icon">
+                        <span>500 مبني</span>
+                    </li>
+                    <li>
+                      <img src="../assets/images/icons/icon17.svg" alt="icon">
+                      <span>3000 وحدة</span>
+                    </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <ul class="moreFeat_bx flx_bx flx_start" >
+                      <li>
+                          <img src="../assets/images/icons/icon18.svg" alt="icon">
+                          <span>مساحات خضراء</span>
+                      </li>
+                      <li>
+                        <img src="../assets/images/icons/icon19.svg" alt="icon">
+                        <span>حراسة خاصة</span>
+                    </li>
+                    <li>
+                      <img src="../assets/images/icons/icon20.svg" alt="icon">
+                      <span>جراجات</span>
+                    </li>
+                    <li>
+                      <img src="../assets/images/icons/icon21.svg" alt="icon">
+                      <span>اماكن مخصصة للاطفال</span>
+                    </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <ul class="moreFeat_bx flx_bx flx_start" >
+                      <li>
+                          <img src="../assets/images/icons/icon18.svg" alt="icon">
+                          <span>مساحات خضراء</span>
+                      </li>
+                      <li>
+                        <img src="../assets/images/icons/icon19.svg" alt="icon">
+                        <span>حراسة خاصة</span>
+                    </li>
+                    <li>
+                      <img src="../assets/images/icons/icon20.svg" alt="icon">
+                      <span>جراجات</span>
+                    </li>
+                    <li>
+                      <img src="../assets/images/icons/icon21.svg" alt="icon">
+                      <span>اماكن مخصصة للاطفال</span>
+                    </li>
+                    </ul>
+                  </div>
+                </td>
+              </tbody>
+            </table>
+          </div>
+      </div><!-- END C/ col -->
+    </div><!-- END C/ row -->
+  </div><!-- END C/ container -->
+</section><!-- END C/ projectHeader_bx -->
+
+<section class="inner_pg projectProperty_pg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="advSearch_bx">
+          <form>
+            <div class="mb-3">
+              <label  class="form-label">نوع الوحدة</label>
+              <select class="form-select">
+                <option selected>اختر</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div><!-- END C/ mb-3 -->
+            <div class="mb-3">
+              <label  class="form-label">المدينة</label>
+              <select class="form-select">
+                <option selected>اختر</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div><!-- END C/ mb-3 -->
+            <div class="mb-3">
+              <label  class="form-label">الحالة</label>
+              <select class="form-select">
+                <option selected>اختر</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div><!-- END C/ mb-3 -->
+            <div class="mb-3">
+              <label  class="form-label">عدد الغرف</label>
+              <select class="form-select">
+                <option selected>اختر</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div><!-- END C/ mb-3 -->
+            <div class="mb-3">
+              <label  class="form-label">المزايا</label>
+              <select class="form-select">
+                <option selected>اختر</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div><!-- END C/ mb-3 -->
+            <div class="mb-3">
+              <label  class="form-label">نوع الدفع</label>
+              <select class="form-select">
+                <option selected>اختر</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div><!-- END C/ mb-3 -->
+            <div class="mb-3">
+              <label  class="form-label">مدي السعر <span>(200,000 الي 500,000) ريال</span></label>
+              <input type="range" class="form-range" min="20000" max="3000000" step="50000">
+            </div><!-- END C/ mb-3 -->
+            <div class="mb-3 flx_bx flx_end">
+              <button class="btn btn_sc">
+                <img src="../assets/images/icons/delete.svg" alt="icon">
+                <span>تفريغ</span>
+              </button>
+              <button class="btn btn_st">
+                <img src="../assets/images/icons/icon5.svg" alt="icon">
+                <span>ابحث</span>
+              </button>
+            </div><!-- END C/ mb-3 -->
+          </form>
+        </div><!-- END C/ advSearch_bx -->
+      </div><!-- END C/ col -->
+      <div class="col-12 col-md-9">
+        <div class="allprojectsProperty_bx">
+            <article>
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <div class="propertyCard_bx">
+                    <div class="first_list flx_bx flx_btwen">
+                      <div class="flx_bx">
+                         <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمفضلة">
+                        <img src="../assets/images/icons/fav.svg" alt="icon">
+                      </a>
+                        <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمقارنة">
+                          <img src="../assets/images/icons/compare.svg" alt="icon">
+                        </a>
+                      </div><!-- END C/ flx_bx -->
+                      <div class="avaliable_bx">
+                        <span>متاحة</span>
+                      </div><!-- END C/ div -->
+                    </div><!-- END C/ first_list -->
+
+                    <a href="تفاصيل-الوحدة.html">
+                      <div class="main_det">
+                        <h1>A1</h1>
+                        <p>150,000ريال</p>
+                      </div><!-- END C/ main_det -->
+                      <div class="last_list">
+                        <ul class="flx_bx">
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon9.svg" alt="icon">
+                            <span>180 متر مربع</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon22.svg" alt="icon">
+                            <span>دور أول</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon23.svg" alt="icon">
+                            <span>3 غرف كبيرة</span>
+                          </li>
+                        </ul>
+                      </div><!-- END C/ flx_bx -->
+                    </a>
+                  </div><!-- END C/ propertyCard_bx -->
+                </div><!-- END C/ col -->
+
+                <div class="col-12 col-md-4">
+                  <div class="propertyCard_bx soldout_bg">
+                    <div class="first_list flx_bx flx_btwen">
+                      <div class="flx_bx">
+                         <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمفضلة">
+                        <img src="../assets/images/icons/fav.svg" alt="icon">
+                      </a>
+                        <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمقارنة">
+                          <img src="../assets/images/icons/compare.svg" alt="icon">
+                        </a>
+                      </div><!-- END C/ flx_bx -->
+                      <div class="soldOut_bx">
+                        <span>مباعة</span>
+                      </div><!-- END C/ div -->
+                    </div><!-- END C/ first_list -->
+
+                    <a href="#">
+                      <div class="main_det">
+                        <h1>A1</h1>
+                        <p>150,000ريال</p>
+                      </div><!-- END C/ main_det -->
+                      <div class="last_list">
+                        <ul class="flx_bx">
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon9.svg" alt="icon">
+                            <span>180 متر مربع</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon22.svg" alt="icon">
+                            <span>دور أول</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon23.svg" alt="icon">
+                            <span>3 غرف كبيرة</span>
+                          </li>
+                        </ul>
+                      </div><!-- END C/ flx_bx -->
+                    </a>
+                  </div><!-- END C/ propertyCard_bx -->
+                </div><!-- END C/ col -->
+                
+                <div class="col-12 col-md-4">
+                  <div class="propertyCard_bx">
+                    <div class="first_list flx_bx flx_btwen">
+                      <div class="flx_bx">
+                         <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمفضلة">
+                        <img src="../assets/images/icons/fav.svg" alt="icon">
+                      </a>
+                        <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمقارنة">
+                          <img src="../assets/images/icons/compare.svg" alt="icon">
+                        </a>
+                      </div><!-- END C/ flx_bx -->
+                      <div class="avaliable_bx">
+                        <span>متاحة</span>
+                      </div><!-- END C/ div -->
+                    </div><!-- END C/ first_list -->
+
+                    <a href="#">
+                      <div class="main_det">
+                        <h1>A1</h1>
+                        <p>150,000ريال</p>
+                      </div><!-- END C/ main_det -->
+                      <div class="last_list">
+                        <ul class="flx_bx">
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon9.svg" alt="icon">
+                            <span>180 متر مربع</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon22.svg" alt="icon">
+                            <span>دور أول</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon23.svg" alt="icon">
+                            <span>3 غرف كبيرة</span>
+                          </li>
+                        </ul>
+                      </div><!-- END C/ flx_bx -->
+                    </a>
+                  </div><!-- END C/ propertyCard_bx -->
+                </div><!-- END C/ col -->
+
+                <div class="col-12 col-md-4">
+                  <div class="propertyCard_bx">
+                    <div class="first_list flx_bx flx_btwen">
+                      <div class="flx_bx">
+                         <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمفضلة">
+                        <img src="../assets/images/icons/fav.svg" alt="icon">
+                      </a>
+                        <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمقارنة">
+                          <img src="../assets/images/icons/compare.svg" alt="icon">
+                        </a>
+                      </div><!-- END C/ flx_bx -->
+                      <div class="soldOut_bx">
+                        <span>مباعة</span>
+                      </div><!-- END C/ div -->
+                    </div><!-- END C/ first_list -->
+
+                    <a href="#">
+                      <div class="main_det">
+                        <h1>A1</h1>
+                        <p>150,000ريال</p>
+                      </div><!-- END C/ main_det -->
+                      <div class="last_list">
+                        <ul class="flx_bx">
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon9.svg" alt="icon">
+                            <span>180 متر مربع</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon22.svg" alt="icon">
+                            <span>دور أول</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon23.svg" alt="icon">
+                            <span>3 غرف كبيرة</span>
+                          </li>
+                        </ul>
+                      </div><!-- END C/ flx_bx -->
+                    </a>
+                  </div><!-- END C/ propertyCard_bx -->
+                </div><!-- END C/ col -->
+                <div class="col-12 col-md-4">
+                  <div class="propertyCard_bx">
+                    <div class="first_list flx_bx flx_btwen">
+                      <div class="flx_bx">
+                         <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمفضلة">
+                        <img src="../assets/images/icons/fav.svg" alt="icon">
+                      </a>
+                        <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمقارنة">
+                          <img src="../assets/images/icons/compare.svg" alt="icon">
+                        </a>
+                      </div><!-- END C/ flx_bx -->
+                      <div class="avaliable_bx">
+                        <span>متاحة</span>
+                      </div><!-- END C/ div -->
+                    </div><!-- END C/ first_list -->
+
+                    <a href="#">
+                      <div class="main_det">
+                        <h1>A1</h1>
+                        <p>150,000ريال</p>
+                      </div><!-- END C/ main_det -->
+                      <div class="last_list">
+                        <ul class="flx_bx">
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon9.svg" alt="icon">
+                            <span>180 متر مربع</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon22.svg" alt="icon">
+                            <span>دور أول</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon23.svg" alt="icon">
+                            <span>3 غرف كبيرة</span>
+                          </li>
+                        </ul>
+                      </div><!-- END C/ flx_bx -->
+                    </a>
+                  </div><!-- END C/ propertyCard_bx -->
+                </div><!-- END C/ col -->
+
+                <div class="col-12 col-md-4">
+                  <div class="propertyCard_bx">
+                    <div class="first_list flx_bx flx_btwen">
+                      <div class="flx_bx">
+                         <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمفضلة">
+                        <img src="../assets/images/icons/fav.svg" alt="icon">
+                      </a>
+                        <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمقارنة">
+                          <img src="../assets/images/icons/compare.svg" alt="icon">
+                        </a>
+                      </div><!-- END C/ flx_bx -->
+                      <div class="soldOut_bx">
+                        <span>مباعة</span>
+                      </div><!-- END C/ div -->
+                    </div><!-- END C/ first_list -->
+
+                    <a href="#">
+                      <div class="main_det">
+                        <h1>A1</h1>
+                        <p>150,000ريال</p>
+                      </div><!-- END C/ main_det -->
+                      <div class="last_list">
+                        <ul class="flx_bx">
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon9.svg" alt="icon">
+                            <span>180 متر مربع</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon22.svg" alt="icon">
+                            <span>دور أول</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon23.svg" alt="icon">
+                            <span>3 غرف كبيرة</span>
+                          </li>
+                        </ul>
+                      </div><!-- END C/ flx_bx -->
+                    </a>
+                  </div><!-- END C/ propertyCard_bx -->
+                </div><!-- END C/ col -->
+                <div class="col-12 col-md-4">
+                  <div class="propertyCard_bx">
+                    <div class="first_list flx_bx flx_btwen">
+                      <div class="flx_bx">
+                         <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمفضلة">
+                        <img src="../assets/images/icons/fav.svg" alt="icon">
+                      </a>
+                        <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمقارنة">
+                          <img src="../assets/images/icons/compare.svg" alt="icon">
+                        </a>
+                      </div><!-- END C/ flx_bx -->
+                      <div class="avaliable_bx">
+                        <span>متاحة</span>
+                      </div><!-- END C/ div -->
+                    </div><!-- END C/ first_list -->
+
+                    <a href="#">
+                      <div class="main_det">
+                        <h1>A1</h1>
+                        <p>150,000ريال</p>
+                      </div><!-- END C/ main_det -->
+                      <div class="last_list">
+                        <ul class="flx_bx">
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon9.svg" alt="icon">
+                            <span>180 متر مربع</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon22.svg" alt="icon">
+                            <span>دور أول</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon23.svg" alt="icon">
+                            <span>3 غرف كبيرة</span>
+                          </li>
+                        </ul>
+                      </div><!-- END C/ flx_bx -->
+                    </a>
+                  </div><!-- END C/ propertyCard_bx -->
+                </div><!-- END C/ col -->
+
+                <div class="col-12 col-md-4">
+                  <div class="propertyCard_bx">
+                    <div class="first_list flx_bx flx_btwen">
+                      <div class="flx_bx">
+                         <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمفضلة">
+                        <img src="../assets/images/icons/fav.svg" alt="icon">
+                      </a>
+                        <a href="#" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="أضف للمقارنة">
+                          <img src="../assets/images/icons/compare.svg" alt="icon">
+                        </a>
+                      </div><!-- END C/ flx_bx -->
+                      <div class="soldOut_bx">
+                        <span>مباعة</span>
+                      </div><!-- END C/ div -->
+                    </div><!-- END C/ first_list -->
+
+                    <a href="#">
+                      <div class="main_det">
+                        <h1>A1</h1>
+                        <p>150,000ريال</p>
+                      </div><!-- END C/ main_det -->
+                      <div class="last_list">
+                        <ul class="flx_bx">
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon9.svg" alt="icon">
+                            <span>180 متر مربع</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon22.svg" alt="icon">
+                            <span>دور أول</span>
+                          </li>
+                          <li class="flx_bx">
+                            <img src="../assets/images/icons/icon23.svg" alt="icon">
+                            <span>3 غرف كبيرة</span>
+                          </li>
+                        </ul>
+                      </div><!-- END C/ flx_bx -->
+                    </a>
+                  </div><!-- END C/ propertyCard_bx -->
+                </div><!-- END C/ col -->
+              </div><!-- END C/ row -->
+              <div class="pagging_bx">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">«</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">»</span>
+                    </a>
+                  </li>
+                </ul>
+              </div> 
+            </article>
+        </div><!-- END C/ allprojectsProperty_bx -->
+      </div><!-- END C/ col -->
+    </div><!-- END C/ row -->
+  </div><!-- END C/ container -->
+</section><!-- END C/ inner_pg -->
+
+<footer>
+  <div class="newsLetter_bx">
+      <div class="flx_bx flx_btwen">
+        <div class="start_bx flx_bx">
+          <img src="../assets/images/icons/open-email.svg" alt="icon">
+          <div class="txt_bx">
+            <h1>اشترك في نشرتنا البريدية</h1>
+            <p>يمكنك الان البقاء علي اطلاع بكل جديد العقارات</p>
+          </div><!-- END C/ txt_bx -->
+        </div><!-- END C/ start_bx -->
+        <div class="end_bx">
+          <form>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="اكتب بريدك الالكتروني هنا" >
+              <span class="input-group-text">
+                <button type="button" class="btn btn_st">اشتراك</button>
+              </span>
+            </div><!-- END C/ input-group -->
+          </form>
+        </div><!-- END C/ end_bx -->
+      </div><!-- END C/ flx_bx -->
+  </div><!-- END C/ newsLetter_bx -->
+  <div class="top_footer">
+    <div class="container">
+      <div class="row">
+      <div class="col-12 col-md-5">
+          <img src="../assets/images/logo2.svg" alt="logo">
+          <p>
+            كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري كلمة مختصرة وايضاحية عن الشركة ونشاطها العقاري 
+          </p>
+          <ul class="soc_list flx_bx flx_start">
+            <li>
+              <a href="#" target="_blank" class="twit_soc" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="inst_soc" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="youtube_soc" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="snap_soc" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="snapchat">
+                <i class="fab fa-snapchat-ghost"></i>
+              </a>
+            </li>
+          </ul>
+      </div><!-- END C/ col -->
+      <div class="col-12 col-md-7">
+          <ul class="footer_nav flx_bx">
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>الرئيسية</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>مشاريع المطوريين</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>مشاريع مميزة</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>العروض العقارية</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>عروض مميزة</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>الطلبات</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>عن بريع</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>سياسة الاستخدام والخصوصية</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>المدونة</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>الاسئلة الشائعة</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/icons/link.svg" alt="icon">
+                <span>تواصل معنا</span>
+              </a>
+            </li>
+          </ul>
+      </div><!-- END C/ col -->
+    </div><!-- END C/ row -->
+    </div><!-- END C/ container -->
+  </div><!-- END C/ top_footer -->
+  <div class="bottom_footer">
+    <div class="container">
+      <p>جميع الحقوق محفوظة لشركة بريع العقارية &copy; 2023</p>
+    </div><!-- END C/ container -->
+  </div><!-- END C/ bottom_footer -->
+</footer>
+
+<!-- *^* JS *^* --> 
+   <script src="../assets/js/bootstrap.bundle.min.js"></script>
+   <script src="../assets/js/popper.min.js"></script>
+   <script src="../assets/js/all.min.js"></script>
+   <script src="../assets/js/fontawesome.min.js"></script>
+   <script src="../assets/js/jquery-1.12.2.min.js"></script>
+   <script src="../assets/js/owl.carousel.min.js"></script>
+   <script src="../assets/js/mscript.js"></script>
+   <script src="../assets/js/waypoints.min.js"></script> 
+   <script src="../assets/js/animation.js"></script>
+</body>
+</html>
